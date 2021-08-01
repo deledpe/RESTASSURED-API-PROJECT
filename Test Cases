@@ -1,0 +1,56 @@
+
+
+# Two dimensional data table approach	      
+
+@tag
+Feature: To validate new registration, search and add the product to cart.   
+
+background:
+   Given user navigates to https://www.takealot.com
+
+
+  @tag1
+  Scenario Outline: To validate user registration 
+   # Given user navigates to https://www.takealot.com
+    And click on Register link at the top menu bar
+    Then enter the FirstName,LastName,EMail,RetypeEmail,Password,MobileNumber,Birthday,NewsLetterProduct,OffersViaSMS, offersFromPartners
+      | FirstName    | John               |
+      | LastName     | Doe                |
+      | EMail        | tester@gmail.com   |  
+      | RetypeEmail n| tester@gmail.com   |
+      | Password     | password234        | 
+	  | MobileNumber | Birthday           |
+	  
+    Then Click on Calculate button
+    Then Validate the payment amount
+    Then Validate the total interest rate
+    And Close the browser
+	
+	  @tag2
+  Scenario Outline: User login 
+   # Given that user is on https://www.takealot.com
+    And enter username <username> enter password <password> and click on search button
+    Then user should successfully login
+
+    Examples: 
+      | username         | password      |
+      | tester@gmail.com | password234   |
+	
+
+  @tag3
+  Scenario Outline: User search and add the product to basket
+  # Given that user is on https://www.takealot.com
+	And select an item from Shop by department <watches>
+    Then enter the product as watches <ItemName> 
+	And click on search button
+	Then user should see the number of available watches displayed
+    Then user select product name as <ProductName> 
+    Then closed the browser
+
+    Examples: 
+      | ProductName                                           | 
+      | Garmin Forerunner 45S Sports Watch Black              | 
+      | Garmin QuickFit 22mm Silicone Watch Band - Amp Yellow |     
+
+   
+
