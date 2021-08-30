@@ -1,0 +1,25 @@
+
+PWD - command to find out the path of the current working directory (folder) you’re in.
+cd - To navigate through the Linux files and directories.
+ls command is used to view the contents of a directory. By default.
+ls -R will list all the files in the sub-directories as well
+ls -a will show the hidden files
+ls -al will list the files and directories with detailed information like the permissions, size, owner, etc.
+CP -command to copy files from the current directory to a different directory
+mv -command is used to move files.
+mkdir -command to make a new directory 
+rmdir - remove directory.
+touch - command allows you to create a blank new file
+grep - It lets you search through all the text in a given file.
+grep blue notepad.txt will search for the word blue in the notepad file.
+Sudo - this command enables you to perform tasks that require administrative or root permissions.
+df - command to get a report on the system’s disk space usage
+diff - command compares the contents of two files line by line.
+chmod  - is used to change the read, write, and execute permissions of files and directories.
+chown - command enables you to change or transfer the ownership of a file to the specified username
+jobs - command will display all current jobs along with their statuses
+kill  -mand. It will send a certain signal to the misbehaving app and instructs the app to terminate itself.
+ping -command to check your connectivity status to a server
+top - mmand will display a list of running processes and how much CPU each process uses. 
+zip - command to compress your files into a zip archive, and use the unzip command to extract the zipped files from a zip archive.
+clear - command to clean out the terminal if it is getting cluttered with too many past commands.

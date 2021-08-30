@@ -1,0 +1,21 @@
+
+
+https://www.youtube.com/watch?v=o3tYiyE_OXE
+
+#https://www.youtube.com/watch?v=o3tYiyE_OXE
+from selenium.webdriver.chrome import webdriver
+from selenium.webdriver.common.keys import Keys
+
+
+#driver-webdriver.ie(executable_path="C:\BrowserDrivers\IEDriverServer.exe")
+#webdriver-webdriver.edge(executable_path="C:\BrowserDrivers\msedgedriver.exe")
+
+#driver=webdriver.firefox(executable_path="C:\browserDrivers\geckodriverexe.exe")
+
+driver=webdriver.chrome(executable_path="\C:\BrowserDrivers\chromedriver.exe")
+driver.get("https://www.jobserve.com/")
+print(driver.title)
+print(driver.current_url)
+driver(driver.page.source)
+
+driver.close()
