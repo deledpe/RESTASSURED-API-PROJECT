@@ -1,3 +1,0 @@
-# ProjectMM
-
-Documentation
